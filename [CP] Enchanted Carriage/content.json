@@ -1,0 +1,158 @@
+{
+	"Format": "1.23.0",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "aedenthorn.PersonalTravellingCart/dictionary",
+			"Entries": {
+				"EnchantedCarriage": {
+					"mapPath": "StarAmy.Carriage/map",
+					"spriteSheetPath": "StarAmy.Carriage/cart",
+					"entryTile": {
+						"X": 6,
+						"Y": 6
+					},
+					"left": {
+						"backRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 128,
+							"Height": 128
+						},
+						"frontRect": {
+							"X": 0,
+							"Y": 128,
+							"Width": 128,
+							"Height": 128
+						},
+						"clickRect": {
+							"X": 17,
+							"Y": 26,
+							"Width": 95,
+							"Height": 57
+						},
+						"hitchRect": {
+							"X": 0,
+							"Y": 63,
+							"Width": 19,
+							"Height": 13
+						},
+						"cartOffset": "40, -296",
+						"playerOffset": "-74, -20",
+						"frames": 2,
+						"framerate": 64
+					},
+					"right": {
+						"backRect": {
+							"X": 0,
+							"Y": 256,
+							"Width": 128,
+							"Height": 128
+						},
+						"frontRect": {
+							"X": 0,
+							"Y": 384,
+							"Width": 128,
+							"Height": 128
+						},
+						"clickRect": {
+							"X": 17,
+							"Y": 26,
+							"Width": 95,
+							"Height": 57
+						},
+						"hitchRect": {
+							"X": 110,
+							"Y": 63,
+							"Width": 19,
+							"Height": 13
+						},
+						"cartOffset": "-444, -296",
+						"playerOffset": "73, -20",
+						"frames": 2,
+						"framerate": 64
+					},
+					"up": {
+						"backRect": {
+							"X": 0,
+							"Y": 512,
+							"Width": 128,
+							"Height": 128
+						},
+						"frontRect": {
+							"X": 0,
+							"Y": 640,
+							"Width": 128,
+							"Height": 128
+						},
+						"clickRect": {
+							"X": 42,
+							"Y": 27,
+							"Width": 44,
+							"Height": 87
+						},
+						"hitchRect": {
+							"X": 52,
+							"Y": 0,
+							"Width": 23,
+							"Height": 27
+						},
+						"cartOffset": "-204, -60",
+						"playerOffset": "0, -320",
+						"frames": 0
+					},
+					"down": {
+						"backRect": {
+							"X": 0,
+							"Y": 768,
+							"Width": 128,
+							"Height": 128
+						},
+						"frontRect": {
+							"X": 0,
+							"Y": 896,
+							"Width": 128,
+							"Height": 128
+						},
+						"clickRect": {
+							"X": 42,
+							"Y": 14,
+							"Width": 44,
+							"Height": 87
+						},
+						"hitchRect": {
+							"X": 52,
+							"Y": 229,
+							"Width": 23,
+							"Height": 27
+						},
+						"cartOffset": "-204, -472",
+						"playerOffset": "0, 192",
+						"frames": 0
+					}
+				}
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "StarAmy.Carriage/cart",
+			"FromFile": "assets/cart.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "StarAmy.Carriage/map",
+			"FromFile": "assets/Cart.tmx"
+		},
+
+		//seat function
+
+   {
+      "Action": "EditData",
+      "Target": "Data/ChairTiles",
+      "Entries": {
+         "z_amycarriage/2/3": "1/1/right/custom 0.3 0 0/-1/-1/false",
+         "z_amycarriage/1/2": "1/1/left/custom -0.3 0 0/-1/-1/false",
+      },
+   },
+	]
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="14" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="174">
+ <properties>
+  <property name="AmbientLight" value="255 255 255"/>
+  <property name="DayTiles" value="Front 4 1 2 Front 9 1 2"/>
+  <property name="FloorIDs" value="Floor"/>
+  <property name="Light" value="4 1 4 9 1 4"/>
+  <property name="NightTiles" value="Front 4 1 15 Front 9 1 15"/>
+  <property name="Warp" value="1000 1000 Farm 21 22"/>
+  <property name="z_amycarriage/2/3" value="1/1/right/chairshort/2/3/false/z_amycarriage"/>
+ </properties>
+ <tileset firstgid="1" name="dummy" tilewidth="16" tileheight="16" tilecount="0" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="1" name="z_amycarriage" tilewidth="16" tileheight="16" tilecount="56" columns="14">
+  <image source="z_amycarriage.png" width="224" height="64"/>
+ </tileset>
+ <tileset firstgid="57" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="0" columns="16">
+  <image source="walls_and_floors" width="256" height="560"/>
+ </tileset>
+ <layer id="1" name="Back" width="14" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,11,0,1,0,0,1,0,55,0,0,0,
+0,0,0,43,15,0,0,0,0,15,43,0,0,0,
+0,0,0,43,43,43,43,43,43,43,43,0,0,0,
+0,0,0,43,43,43,43,43,43,43,43,0,0,0,
+0,0,0,43,43,43,43,43,43,43,43,0,0,0,
+0,0,0,13,43,43,43,43,43,43,12,0,0,0,
+0,0,0,0,0,0,17,17,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="14" height="8">
+  <data encoding="csv">
+0,0,0,23,22,22,22,22,22,22,10,0,0,0,
+0,0,36,37,1,4,5,6,7,1,24,25,0,0,
+0,0,9,15,15,18,19,20,21,15,15,8,0,0,
+0,0,9,40,41,29,29,29,29,26,27,8,0,0,
+0,0,9,44,45,0,0,0,0,30,31,8,0,0,
+0,0,9,44,45,0,0,0,0,30,31,8,0,0,
+0,0,39,14,45,0,0,0,0,30,28,54,0,0,
+0,0,0,0,0,56,0,0,42,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Front" width="14" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,16,0,0,0,0,16,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,50,38,52,0,0,53,38,51,0,0,0,
+0,0,0,0,0,0,2,2,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Back">
+  <object id="61" name="TileData" x="96" y="112" width="16" height="16">
+   <properties>
+    <property name="FloorID" value="Floor"/>
+    <property name="Leave" value="T"/>
+   </properties>
+  </object>
+  <object id="138" name="TileData" x="112" y="112" width="16" height="16">
+   <properties>
+    <property name="FloorID" value="Floor"/>
+    <property name="Leave" value="T"/>
+   </properties>
+  </object>
+  <object id="139" name="TileData" x="80" y="112" width="16" height="16">
+   <properties>
+    <property name="FloorID" value="Floor"/>
+    <property name="Leave" value="T"/>
+   </properties>
+  </object>
+  <object id="140" name="TileData" x="128" y="112" width="16" height="16">
+   <properties>
+    <property name="FloorID" value="Floor"/>
+    <property name="Leave" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="Buildings"/>
+ <objectgroup id="6" name="Front"/>
+</map>
