@@ -1,7 +1,7 @@
 {
     "Name": "[CP] Enchanted Carriage",
     "Author": "StarAmy",
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "Description": "[CP] Adds a new carriage skin and map for aedenthorn's Personal Traveling Cart",
     "UniqueID": "staramy.carriage",
     "MinimumApiVersion": "3.13.0",

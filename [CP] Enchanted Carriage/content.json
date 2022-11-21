@@ -1,5 +1,11 @@
 {
 	"Format": "1.23.0",
+	"ConfigSchema": {
+      "Cart Interior": {
+            "AllowValues": "Two Seats, One Seat, One Seat One Bed, Empty",
+            "Default": "Two Seats"
+        },
+     },
 	"Changes": [
 		{
 			"Action": "EditData",
@@ -141,7 +147,36 @@
 		{
 			"Action": "Load",
 			"Target": "StarAmy.Carriage/map",
-			"FromFile": "assets/Cart.tmx"
+			"FromFile": "assets/Cart.tmx",
+			"When":{ 
+            "Cart Interior": "Two Seats"
+        }
+		},
+		{
+			"Action": "Load",
+			"Target": "StarAmy.Carriage/map",
+			"FromFile": "assets/Cart_One_Seat.tmx",
+			"When":{ 
+            "Cart Interior": "One Seat"
+        }
+		},
+
+		{
+			"Action": "Load",
+			"Target": "StarAmy.Carriage/map",
+			"FromFile": "assets/Cart_Bed.tmx",
+			"When":{ 
+            "Cart Interior": "One Seat One Bed"
+        }
+		},
+
+		{
+			"Action": "Load",
+			"Target": "StarAmy.Carriage/map",
+			"FromFile": "assets/Cart_Empty.tmx",
+			"When":{ 
+            "Cart Interior": "Empty"
+        }
 		},
 
 		//seat function
@@ -153,6 +188,29 @@
          "z_amycarriage/2/3": "1/1/right/custom 0.3 0 0/-1/-1/false",
          "z_amycarriage/1/2": "1/1/left/custom -0.3 0 0/-1/-1/false",
       },
+      "When":{ 
+            "Cart Interior": "Two Seats"
+        }
+   },
+      {
+      "Action": "EditData",
+      "Target": "Data/ChairTiles",
+      "Entries": {
+         "z_amycarriage/2/3": "1/1/right/custom 0.3 0 0/-1/-1/false",
+      },
+      "When":{ 
+            "Cart Interior": "One Seat"
+        }
+   },
+      {
+      "Action": "EditData",
+      "Target": "Data/ChairTiles",
+      "Entries": {
+         "z_amycarriage/2/3": "1/1/right/custom 0.3 0 0/-1/-1/false",
+      },
+      "When":{ 
+            "Cart Interior": "One Seat One Bed"
+        }
    },
 	]
 }
